@@ -1,0 +1,25 @@
+% Pythonic Pursuit game logic in LaTeX pseudocode
+\documentclass{article}
+\usepackage{algorithm}
+
+\begin{document}
+
+\section{Pythonic Pursuit Game Logic}
+
+\begin{algorithm}
+  \caption{Pythonic Pursuit Game Loop}
+  \begin{algorithmic}[1]
+    \State Initialize game variables (cellSize, cellNumber, snake, snakeDirection, snakeSpeed, snakeAlive, fruit)
+    \While{snakeAlive}
+        \State Read user input for controlling snake direction
+        \State Move snake based on user input
+        \State Check for collisions with walls, itself, or fruit
+        \State Update game state and check if snake is alive
+        \State Render the game (text-based representation)
+        \State Pause for a short delay to control game speed
+    \EndWhile
+    \State End of game loop
+  \end{algorithmic}
+\end{algorithm}
+
+\end{document}
